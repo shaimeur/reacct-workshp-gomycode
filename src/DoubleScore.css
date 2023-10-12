@@ -1,0 +1,16 @@
+.DoubleScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grill{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
