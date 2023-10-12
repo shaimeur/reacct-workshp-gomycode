@@ -23,6 +23,11 @@ const EmojiClicker = () =>{
               return  current.filter(e => e.id != id)
             })
     }
+    const heartLess = () =>{
+
+        setEmojis(prev => (prev.map( (item) =>(
+             {...item,emoji:"❤️"} ))))
+    }
     return (
             <div className="EmojiClicker">
                 {emojis.map( (item) =>(
@@ -31,6 +36,7 @@ const EmojiClicker = () =>{
                 <button onClick={addEmo}>add new Emoji</button>
 
                 <button onClick={rmEmo}>remove last Emoji</button>
+                <button onClick={heartLess}>make them heart</button>
             </div>
     )
 }
