@@ -6,8 +6,7 @@ const EmojiClicker = () =>{
     const [emojis,setEmojis] = useState([{id:uuidv4(),emoji: "🙃"}])
     // console.log(uuidv4())
     const addEmo = () =>{
-            // console.log([...emoji,"🙃"])
-            // console.log([...emoji,{uuid:uuidv4()}])
+            // console.log([...emojis,"🙃"])
           setEmojis((prev => [...prev,{id:uuidv4(),emoji:"🙃"}] ) )
 
     }
